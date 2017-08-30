@@ -1,4 +1,4 @@
-- hosts: db
+- hosts: localhost
   vars:
     - wp_mysql_db: wordpress
     - wp_mysql_user: wordpress
@@ -42,7 +42,7 @@
         host: "%" 
 
 
-- hosts: wordpress
+- hosts: localhost
   vars:
     - wp_mysql_db: wordpress
     - wp_mysql_user: wordpress
